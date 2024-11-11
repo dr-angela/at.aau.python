@@ -1,3 +1,9 @@
+# EX2, Coins Problem: Given a bag of Euro cent coins of various denominations: 1, 2, 5, 10, 20, 50.
+# Find the minimum number of coins contained in the bag such that by selecting only coins con-
+# tained in the bag every Euro amount smaller than one Euro can be paid.
+# Example: if you put three coins with denominations of 1, 2, and 2 in the bag then you can pay
+# exactly the amounts of 1, 2, 3, 4, and 5 cents.
+
 def changeCoin(arr, total):
     print("Input Array:", arr)
     print("Total amount:", total)
@@ -40,4 +46,4 @@ def changeCoin(arr, total):
 
 
 if __name__ == "__main__":
-    print("Final result:", changeCoin([1, 2, 5, 10, 20, 50], 99))
+    print("Final result:", changeCoin([1, 2, 5, 10, 20, 50], 100))
