@@ -7,7 +7,7 @@ original_image = Image.open(image_path)
 
 # surreal changings
 enhancer = ImageEnhance.Color(original_image)
-color_enhanced = enhancer.enhance(2.5)  # Verstärkt die Farben
+color_enhanced = enhancer.enhance(2.5)
 
 # gaussian blur
 blurred = color_enhanced.filter(ImageFilter.GaussianBlur(2))
@@ -26,6 +26,6 @@ axes[1].axis("off")
 plt.tight_layout()
 plt.show()
 
-# save it 
+# save it
 final_image.save("Surrealistic_Filtered_Image.jpg")
 print("Surrealistic image saved as 'Surrealistic_Filtered_Image.jpg'")
